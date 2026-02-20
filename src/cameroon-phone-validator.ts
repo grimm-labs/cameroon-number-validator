@@ -100,7 +100,7 @@ export function validateCameroonPhone(phone: string): CameroonPhoneValidationRes
       carrier: 'UNKNOWN_CM',
       type: 'UNKNOWN',
       errorCode: 'EMPTY',
-      errorMessage: 'Le numéro de téléphone est vide.',
+      errorMessage: 'Phone number is empty.',
     };
   }
 
@@ -111,7 +111,7 @@ export function validateCameroonPhone(phone: string): CameroonPhoneValidationRes
       carrier: 'UNKNOWN_CM',
       type: 'UNKNOWN',
       errorCode: 'INVALID_CHARS',
-      errorMessage: 'Le numéro contient des caractères invalides.',
+      errorMessage: 'Phone number contains invalid characters.',
     };
   }
 
@@ -122,7 +122,7 @@ export function validateCameroonPhone(phone: string): CameroonPhoneValidationRes
       carrier: 'UNKNOWN_CM',
       type: 'UNKNOWN',
       errorCode: 'TOO_SHORT',
-      errorMessage: `Numéro trop court (${local.length} chiffre(s) — 9 requis après l'indicatif).`,
+      errorMessage: `Phone number too short (${local.length} digit(s) — 9 required after country code).`,
     };
   }
   if (local.length > 9) {
@@ -131,7 +131,7 @@ export function validateCameroonPhone(phone: string): CameroonPhoneValidationRes
       carrier: 'UNKNOWN_CM',
       type: 'UNKNOWN',
       errorCode: 'TOO_LONG',
-      errorMessage: `Numéro trop long (${local.length} chiffres — 9 requis après l'indicatif).`,
+      errorMessage: `Phone number too long (${local.length} digits — 9 required after country code).`,
     };
   }
 
@@ -143,7 +143,7 @@ export function validateCameroonPhone(phone: string): CameroonPhoneValidationRes
       carrier: 'UNKNOWN_CM',
       type: 'UNKNOWN',
       errorCode: 'UNKNOWN_PREFIX',
-      errorMessage: `Préfixe « ${prefix3} » non reconnu par les opérateurs camerounais.`,
+      errorMessage: `Unknown prefix "${prefix3}" — not recognized by any Cameroonian carrier.`,
     };
   }
 

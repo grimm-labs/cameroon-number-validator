@@ -10,26 +10,26 @@ Install directly from GitHub:
 
 ```bash
 # Using npm
-npm install github:grimm/cameroon-number-validator
+npm install github:grimm-labs/cameroon-number-validator
 
 # Using yarn
-yarn add github:grimm/cameroon-number-validator
+yarn add github:grimm-labs/cameroon-number-validator
 
 # Using pnpm
-pnpm add github:grimm/cameroon-number-validator
+pnpm add github:grimm-labs/cameroon-number-validator
 ```
 
 You can also pin a specific branch, tag, or commit:
 
 ```bash
 # Specific branch
-npm install github:grimm/cameroon-number-validator#main
+npm install github:grimm-labs/cameroon-number-validator#main
 
 # Specific tag
-npm install github:grimm/cameroon-number-validator#v1.0.0
+npm install github:grimm-labs/cameroon-number-validator#v1.0.0
 
 # Specific commit
-npm install github:grimm/cameroon-number-validator#abc1234
+npm install github:grimm-labs/cameroon-number-validator#abc1234
 ```
 
 ## Usage
